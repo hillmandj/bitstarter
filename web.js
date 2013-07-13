@@ -3,7 +3,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 var buf = require('buffer');
 
-var file_str = fs.readFileSync('~/bitstarter/index.html');
+var file_str = fs.readFileSync('index.html');
 var makebuf = file_str.toString('utf-8');
 
 app.get('/', function(request, response) {
